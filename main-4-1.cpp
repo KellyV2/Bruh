@@ -11,6 +11,6 @@ int main() {
     int *vals[]={row1,row2,row3};
     int ncols = 3;
     int nrows = 3;
-    sum_middle_row_column(vals, nrows, ncols);
+    cout << sum_middle_row_column(vals, nrows, ncols) << endl;
     return 0;
 }
