@@ -1,10 +1,10 @@
 int sum_middle_row_column(int **vals, int num_rows, int num_cols) {
     int sum = 0;
-    for (int i = 0; i < num_rows; i++) {
-        sum = sum + vals[i][(num_cols/2)+1];
+    for(int col = 0; col < num_cols; col++) {
+        sum += vals[num_cols/2][col];
     }
-    for (int j = 0; j < num_cols; j++) {
-        sum = sum + vals[(num_rows/2)+1][j];
+    for (int row = 0; row < num_rows; row++) {
+        sum += vals[row][num_rows/2];
     }
     return sum;
 }
