@@ -1,3 +1,5 @@
 int **pointer_array(int *vals, int len) {
-    return 0;
+    for (int i = 0; i < len; i++) {
+        *(vals+i) = (*vals+i);
+    }
 }
